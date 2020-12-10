@@ -74,11 +74,11 @@ RUN conda install dask
 RUN conda install ipykernel
 
 
-WORKDIR /app
+WORKDIR /projects
 EXPOSE 8888 
 
 # Better container security versus running as root
 RUN useradd -ms /bin/bash container_user
 ENV PATH="$HOME/.local/bin:$PATH"
 
-CMD ["bash", "-c", "source /etc/bash.bashrc && jupyter lab --notebook-dir=/app --ip 0.0.0.0 --no-browser --allow-root --config=/usr/local/etc/jupyter/jupyter_notebook_config.py --NotebookApp.custom_display_url='http://localhost:8888'"]
+CMD ["bash", "-c", "source /etc/bash.bashrc && jupyter lab --notebook-dir=/projects --ip 0.0.0.0 --no-browser --allow-root --config=/usr/local/etc/jupyter/jupyter_notebook_config.py --NotebookApp.custom_display_url='http://localhost:8888'"]
