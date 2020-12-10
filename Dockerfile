@@ -62,7 +62,8 @@ RUN pip --no-cache-dir install --upgrade \
     hiplot-mlflow \
     mlflow-extend \
     seldon-deploy-sdk \
-    jupyterlab 
+    jupyterlab \
+    sympy
 
 RUN conda update -n base -c defaults conda
 RUN conda update --all
