@@ -1,2 +1,2 @@
-# tmg_data_science
-The Mentor Group Data Science curriculum 
+# The Mentor Group
+Teaching inner city youth machine learning as a foundation to inspire and generate minority wealth through viable career paths in the field of data science.
