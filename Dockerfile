@@ -1,5 +1,7 @@
 FROM ubuntu:18.04
 
+MAINTAINER joehoeller@gmail.com
+
 ARG PYTHON=python3
 ARG PIP=pip3
 ENV LANG C.UTF-8
